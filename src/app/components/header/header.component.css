@@ -29,7 +29,7 @@
     text-decoration: none;
     color: gainsboro;
     padding: 8px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     letter-spacing: .8px;
 }
 
@@ -69,7 +69,7 @@
     border: none;
     border-radius: 8px;
     color: #d8d4d4;
-    font-size: .9rem;
+    font-size: 0.7rem;
     cursor: pointer;
 }
 
@@ -88,4 +88,9 @@
 
 .login-user>* {
     margin-left: 14px;
+}
+
+.nav .nav-menu li a.active {
+    color: #ff6464;
+    font-size: 1.1rem;
 }

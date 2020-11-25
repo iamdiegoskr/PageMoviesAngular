@@ -1,0 +1,17 @@
+.home-container {
+    margin: 40px 80px;
+    padding: 30px 40px;
+    background: #f1f1f1;
+    border-radius: 12px;
+    box-shadow: 0px 1px 6px 0px #ababab;
+}
+
+.home-container h2 {
+    font-size: 3.2rem;
+    margin-bottom: 30px;
+}
+
+.home-container p {
+    font-size: 1.2rem;
+    color: gray;
+}
