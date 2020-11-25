@@ -1,0 +1,91 @@
+*:focus {
+    outline: none;
+}
+
+.header {
+    background: #190000;
+    padding: 8px 12px;
+}
+
+.header .nav {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-areas: "logo navegation search login";
+    column-gap: 12px;
+}
+
+.nav .logo-container {
+    grid-area: logo;
+}
+
+.nav .nav-menu {
+    list-style: none;
+    grid-area: navegation;
+    display: flex;
+    align-items: center;
+}
+
+.nav .nav-menu li a {
+    text-decoration: none;
+    color: gainsboro;
+    padding: 8px;
+    font-size: 1.3rem;
+    letter-spacing: .8px;
+}
+
+.nav .nav-menu li a:hover {
+    color: #767676;
+}
+
+.nav .search-container {
+    grid-area: search;
+    align-self: center;
+}
+
+.nav .search-container input {
+    height: 38px;
+    padding-left: 22px;
+    width: 80%;
+    border-radius: 8px;
+    border: none;
+    background: #3e3e3e;
+}
+
+.nav .search-container input:focus {
+    background: #fff;
+}
+
+.nav .search-container input::placeholder {
+    color: rgb(151, 151, 151);
+}
+
+.nav .login-user {
+    grid-area: login;
+    align-self: center;
+}
+
+.login-user button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    color: #d8d4d4;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.login-user .button-create-account {
+    background: #000000e6;
+}
+
+.login-user .button-login-user {
+    background: #383838;
+}
+
+.login-user .button-login-user:hover {
+    background: #0e8861;
+    color: #fff;
+}
+
+.login-user>* {
+    margin-left: 14px;
+}
