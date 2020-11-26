@@ -2,7 +2,6 @@
     padding: 50px 60px 100px;
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: 430px;
     gap: 80px 24px;
 }
 
@@ -54,6 +53,7 @@
     font-size: 1.8rem;
     color: #fff;
     letter-spacing: 1px;
+    margin-bottom: 16px;
 }
 
 .card-overlay .description {

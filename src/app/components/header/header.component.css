@@ -94,3 +94,29 @@
     color: #ff6464;
     font-size: 1.1rem;
 }
+
+@media (max-width:768px) {
+    .header .nav {
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: "logo navegation login" "search search search";
+        row-gap: 20px;
+        padding: 16px;
+    }
+    .nav .search-container input {
+        padding-left: 22px;
+        width: 100%;
+    }
+}
+
+@media (max-width:590px) {
+    .header .nav {
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: "logo navegation" "login login" "search search";
+    }
+    .nav .nav-menu {
+        justify-content: flex-end;
+    }
+    .nav .login-user {
+        justify-self: center;
+    }
+}
