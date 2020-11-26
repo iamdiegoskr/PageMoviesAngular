@@ -2,14 +2,15 @@
 
     <div class="movie-card" *ngFor="let movie of moviesList">
         <div class="card-poster">
-            <img [src]="movie.imgURL" alt="">
+            <img [src]="movie.imgURL" [alt]="movie.name">
             <div class="card-overlay">
                 <h2 class="title"> {{movie.name}} </h2>
                 <p class="description"> {{movie.description}} </p>
                 <p class="gener"> {{movie.genre}} </p>
             </div>
         </div>
-        <button class="btn-card">Ver más.</button>
+        <!-- <a [routerLink]="['/movie-detail', 1]" class="btn-card">Ver más.</a> -->
+        <button type="button" class="btn-card" (click)="watchMovie(1)">Ver más</button>
     </div>
 
 </section>

@@ -14,6 +14,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { MoviesComponent } from './components/movies/movies.component';
+import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MoviesComponent } from './components/movies/movies.component';
     AboutComponent,
     HomeComponent,
     MoviesComponent,
+    MovieDetailComponent,
   
   ],
   imports: [
