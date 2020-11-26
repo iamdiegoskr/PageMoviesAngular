@@ -60,6 +60,8 @@
     font-size: 1.1rem;
     color: #aea5a5;
     line-height: 1.2;
+    max-height: 60%;
+    overflow: hidden;
 }
 
 .card-overlay .gener {
