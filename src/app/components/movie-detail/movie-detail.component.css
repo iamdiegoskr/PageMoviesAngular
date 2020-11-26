@@ -88,6 +88,10 @@
     color: #5d0997;
 }
 
+.movie-detail .detail-description a i:hover {
+    color: #000;
+}
+
 .back-link {
     position: absolute;
     top: 15px;
