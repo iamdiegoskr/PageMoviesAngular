@@ -1,8 +1,8 @@
 <section class="movies-container">
 
-    <div class="movie-card">
+    <div class="movie-card" *ngFor="let movie of moviesList">
         <div class="card-poster">
-            <img src="https://www.cinecalidad.is/wp-content/uploads/2020/11/manos-a-las-armas.jpg" alt="">
+            <img [src]="movie.imgURL" alt="">
             <div class="card-overlay">
                 <h2 class="title">Title</h2>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat exercitationem doloremque repudiandae recusandae eos perspiciatis odio similique incidunt rerum quae!</p>
