@@ -2,7 +2,7 @@
 
     <div class="movie-detail">
         <div class="detail-title">
-            <h2> {{movie.name}} </h2>
+            <h2>{{ movie.name | uppercase }}</h2>
         </div>
         <div class="detail-post">
             <img [src]="movie.imgURL" alt="">
