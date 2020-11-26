@@ -1,1 +1,23 @@
-<p>movie-detail works!</p>
+<div class="movie-detail-container animate__animated animate__fadeIn">
+
+    <div class="movie-detail">
+        <div class="detail-title">
+            <h2> {{movie.name}} </h2>
+        </div>
+        <div class="detail-post">
+            <img [src]="movie.imgURL" alt="">
+        </div>
+        <div class="detail-description">
+            <p class="description-movie"> {{movie.description}} </p>
+            <p class="gener"><span>Genero : </span>{{movie.genre}} </p>
+            <p class="year"><span>Año : </span>{{movie.year}} </p>
+            <div class="buttons-container">
+                <button class="btn btn-watch-now">Ver ahora</button>
+                <button class="btn btn-download">Descargar</button>
+            </div>
+            <a routerLink="/movies" class="back-link"><i class="fas fa-arrow-circle-left"></i></a>
+        </div>
+    </div>
+
+
+</div>
