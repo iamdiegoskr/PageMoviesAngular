@@ -113,6 +113,14 @@ export class MoviesService {
     return this.movies
   }
 
+  getMovieById(id:number):Movie{
+    for (let movie of this.movies) {
+        if(movie.id==id){
+          return movie;
+        }
+    }
+  }
+
 }
 
 

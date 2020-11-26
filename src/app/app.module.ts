@@ -8,6 +8,7 @@ import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { MoviesComponent } from './components/movies/movies.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { AppRoutingModule } from './app-routing.module';
     HeaderComponent,
     AboutComponent,
     HomeComponent,
+    MoviesComponent,
   
   ],
   imports: [
