@@ -2,12 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
+//rutas
+import { AppRoutingModule } from './app-routing.module';
+
+//servicios
+import { MoviesService } from './movies.service'
+
+//components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
-
-import { AppRoutingModule } from './app-routing.module';
 import { MoviesComponent } from './components/movies/movies.component';
 
 @NgModule({
@@ -23,7 +28,9 @@ import { MoviesComponent } from './components/movies/movies.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    MoviesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
