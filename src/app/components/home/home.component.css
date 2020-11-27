@@ -4,6 +4,7 @@
     background: #f1f1f1;
     border-radius: 12px;
     box-shadow: 0px 1px 6px 0px #ababab;
+    text-align: center;
 }
 
 .home-container h2 {
@@ -11,7 +12,21 @@
     margin-bottom: 30px;
 }
 
+.home-container .home-title i {
+    font-size: 30px;
+    color: #ff9d00;
+}
+
 .home-container p {
     font-size: 1.2rem;
     color: gray;
+}
+
+@media (max-width:590px) {
+    .home-container {
+        margin: 30px 18px;
+    }
+    .home-container h2 {
+        font-size: 2.3rem;
+    }
 }
