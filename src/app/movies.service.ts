@@ -121,6 +121,21 @@ export class MoviesService {
     }
   }
 
+  filterMovies(keyword:string):Movie[]{
+
+      let moviesMatch: Movie[] = [];
+      
+      for (let movie of this.movies) {
+          let nameMovie = movie.name.toLocaleLowerCase();
+          if(nameMovie.indexOf(keyword.toLocaleLowerCase()) >= 0){
+              moviesMatch.push(movie);
+          }
+      }
+
+      return moviesMatch;
+
+  }
+
 }
 
 

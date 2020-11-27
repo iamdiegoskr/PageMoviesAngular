@@ -15,8 +15,8 @@
             </li>
         </ul>
         <div class="search-container">
-            <input type="text" placeholder="Buscador...">
-            <span></span>
+            <input type="text" placeholder="Buscador..." (keyup.enter)="findMovie(buscarMovie.value)" #buscarMovie>
+            <!-- <span></span> -->
         </div>
         <div class="login-user">
             <button class="button-create-account">Crear cuenta</button>

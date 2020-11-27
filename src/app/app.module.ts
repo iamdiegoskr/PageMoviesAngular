@@ -15,6 +15,7 @@ import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { MoviesComponent } from './components/movies/movies.component';
 import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
+import { MoviesFilterComponent } from './components/movies-filter/movies-filter.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { MovieDetailComponent } from './components/movie-detail/movie-detail.com
     HomeComponent,
     MoviesComponent,
     MovieDetailComponent,
+    MoviesFilterComponent,
   
   ],
   imports: [
