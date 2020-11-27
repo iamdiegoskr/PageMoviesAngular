@@ -9,12 +9,13 @@
 
 .home-container h2 {
     font-size: 3.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
 }
 
-.home-container .home-title i {
-    font-size: 30px;
+.home-container i {
+    font-size: 26px;
     color: #ff9d00;
+    margin-bottom: 16px;
 }
 
 .home-container p {
