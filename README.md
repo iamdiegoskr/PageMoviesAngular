@@ -6,3 +6,4 @@ It is a simulation of a movie page where we can search for our favorite movies a
 
 ![](https://i.imgur.com/MbZkv0V.png)
 
+Link page [HERE !](https://iamdiegoskr.github.io/PageMoviesAngular/movies "HERE !")
