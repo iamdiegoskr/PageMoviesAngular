@@ -4,3 +4,20 @@
     grid-template-columns: repeat( auto-fit, minmax(250px, 320px));
     gap: 80px 24px;
 }
+
+.nothing-found {
+    margin: 30px 60px;
+    padding: 30px;
+    background: #db6666;
+    border-radius: 12px;
+}
+
+.nothing-found p {
+    font-size: 1.2rem;
+    color: #f1f5f8;
+}
+
+.nothing-found p i {
+    font-size: 1.2rem;
+    color: #f1f5f8;
+}

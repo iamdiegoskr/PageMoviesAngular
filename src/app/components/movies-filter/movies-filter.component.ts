@@ -10,6 +10,7 @@ import { MoviesService,Movie  } from '../../movies.service';
 export class MoviesFilterComponent implements OnInit {
 
   moviesFound : Movie[] = [];
+  term : string;
 
   constructor(private activatedRoute:ActivatedRoute,
               private moviesService:MoviesService) { }
@@ -17,6 +18,7 @@ export class MoviesFilterComponent implements OnInit {
   ngOnInit(): void {
 
       this.activatedRoute.params.subscribe(params => {
+        this.term=params['term'];
         this.moviesFound = this.moviesService.filterMovies(params['term']);
         console.log(this.moviesFound);
       });
