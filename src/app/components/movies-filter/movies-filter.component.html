@@ -1,1 +1,5 @@
-<p>movies-filter works!</p>
+<section class="movies-container animate__animated animate__backInLeft">
+
+    <app-movie-card *ngFor="let movie of moviesFound " [movie]="movie"></app-movie-card>
+
+</section>
