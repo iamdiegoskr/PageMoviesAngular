@@ -1,15 +1,5 @@
 <section class="movies-container animate__animated animate__backInLeft">
 
-    <div class="movie-card" *ngFor="let movie of moviesList">
-        <div class="card-poster">
-            <img [src]="movie.imgURL" [alt]="movie.name">
-            <div class="card-overlay">
-                <h2 class="title"> {{movie.name}} </h2>
-                <p class="description"> {{movie.description}} </p>
-                <p class="gener"> {{movie.genre}} </p>
-            </div>
-        </div>
-        <button type="button" class="btn-card" (click)="watchMovie(movie.id)">Ver más</button>
-    </div>
+    <app-movie-card *ngFor="let movie of moviesList" [movie]="movie"></app-movie-card>
 
 </section>

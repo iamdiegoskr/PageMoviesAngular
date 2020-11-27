@@ -17,7 +17,6 @@ export class MoviesFilterComponent implements OnInit {
   ngOnInit(): void {
 
       this.activatedRoute.params.subscribe(params => {
-        // console.log(params['term']);
         this.moviesFound = this.moviesService.filterMovies(params['term']);
         console.log(this.moviesFound);
       });
