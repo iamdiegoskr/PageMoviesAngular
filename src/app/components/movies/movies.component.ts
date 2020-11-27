@@ -19,8 +19,8 @@ export class MoviesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  watchMovie(id:number){
-    this.router.navigate(['/movie-detail',id]);
-  }
+  // watchMovie(id:number){
+  //   this.router.navigate(['/movie-detail',id]);
+  // }
 
 }

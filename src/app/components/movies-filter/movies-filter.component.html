@@ -4,6 +4,6 @@
 
 <section class="movies-container animate__animated animate__backInLeft">
 
-    <app-movie-card *ngFor="let movie of moviesFound " [movie]="movie"></app-movie-card>
+    <app-movie-card *ngFor="let movie of moviesFound " [movie]="movie" [idMovie]="movie.id"></app-movie-card>
 
 </section>
