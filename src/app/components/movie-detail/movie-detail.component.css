@@ -68,8 +68,10 @@
 
 .buttons-container .btn {
     padding: 8px 30px;
+    width: 150px;
     border: none;
     margin-right: 12px;
+    margin-bottom: 12px;
     background: #7602c5;
     color: #fffbfb;
     font-weight: bold;
@@ -95,4 +97,24 @@
 .back-link {
     position: absolute;
     top: 15px;
+}
+
+@media (max-width:768px) {
+    .movie-detail {
+        grid-template-columns: 1fr;
+        grid-template-areas: "title" "post" "description";
+    }
+    .detail-post img,
+    .detail-description {
+        border-radius: 0;
+    }
+    .detail-title {
+        text-align: center;
+    }
+    .movie-detail-container {
+        height: 100%;
+    }
+    .detail-description>* {
+        margin-bottom: 12px;
+    }
 }
